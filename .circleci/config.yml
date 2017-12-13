@@ -1,0 +1,105 @@
+references:
+  defaults: &defaults
+    macos:
+      xcode: "9.1.0"
+    shell: /bin/bash --login -eo pipefail
+    environment:
+      TZ: "/usr/share/zoneinfo/Asia/Tokyo"
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+
+version: 2
+jobs:
+  dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      # 実行する Ruby バージョンを固定
+      - run:
+          name: Set Ruby Version
+          command: echo "ruby-2.4" > ~/.ruby-version
+      # Gemfile.lock のチェックサムをキャッシュのキーに使う
+      - restore_cache:
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Bundle install
+          command: bundle check || bundle install
+          environment:
+            BUNDLE_JOBS: 4
+            BUNDLE_RETRY: 3
+      - save_cache:
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - restore_cache:
+          key: v1-pods-{{ checksum "Podfile.lock" }}
+      - run:
+          name: Install CocoaPods
+          # CircleCI が提供する S3 上のアーカイブを使ってリポジトリのフェッチを高速化
+          command: |
+            curl https://cocoapods-specs.circleci.com/fetch-cocoapods-repo-from-s3.sh | bash -s cf
+            bundle exec pod install
+      - save_cache:
+          key: v1-pods-{{ checksum "Podfile.lock" }}
+          paths:
+            - Pods
+  build-and-test:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Set Ruby Version
+          command: echo "ruby-2.4" > ~/.ruby-version
+      - restore_cache:
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+      - restore_cache:
+          key: v1-pods-{{ checksum "Podfile.lock" }}
+      - run:
+          name: Build and run tests
+          command: bundle exec fastlane ios test
+          environment:
+            SCAN_DEVICE: iPhone 6
+            SCAN_SCHEME: CircleCI2Example
+      - store_test_results:
+          path: test_output/report.xml
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: scan-test-results
+      - store_artifacts:
+          path: ~/Library/Logs/scan
+          destination: scan-logs
+  upload-to-deploygate:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: Set Ruby Version
+          command: echo "ruby-2.4" > ~/.ruby-version
+      - restore_cache:
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+      - restore_cache:
+          key: v1-pods-{{ checksum "Podfile.lock" }}
+      - deploy:
+          command: |
+            # configuration を指定可能にする
+            bundle exec fastlane ios adhoc configuration:${ADHOC_CONFIGURATION:-AdHoc_Development}
+      - store_artifacts:
+          path: ~/Library/Logs/gym
+          destination: gym-logs
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - dependencies
+      - build-and-test:
+          requires:
+            - dependencies
+      - upload-to-deploygate:
+          requires:
+            - dependencies
+          # develop のみ配信対象にする
+          filters:
+            branches:
+              only:
+                - develop

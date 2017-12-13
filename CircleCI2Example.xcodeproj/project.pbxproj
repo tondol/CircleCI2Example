@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D77E4F547A8CAFEEE8B0237 /* Pods_CircleCI2Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585BDA2D942D2D6DFAAD30A6 /* Pods_CircleCI2Example.framework */; };
+		2E32265E1FE0DE4F007C121F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32265D1FE0DE4F007C121F /* AppDelegate.swift */; };
+		2E3226601FE0DE4F007C121F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E32265F1FE0DE4F007C121F /* ViewController.swift */; };
+		2E3226631FE0DE4F007C121F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3226611FE0DE4F007C121F /* Main.storyboard */; };
+		2E3226651FE0DE4F007C121F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3226641FE0DE4F007C121F /* Assets.xcassets */; };
+		2E3226681FE0DE4F007C121F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3226661FE0DE4F007C121F /* LaunchScreen.storyboard */; };
+		2E3226731FE0DE4F007C121F /* CircleCI2ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3226721FE0DE4F007C121F /* CircleCI2ExampleTests.swift */; };
+		E2A07BFF6DB219B715B3BF0F /* Pods_CircleCI2ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE0982986CB0B0797B5E9D2 /* Pods_CircleCI2ExampleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E32266F1FE0DE4F007C121F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E3226521FE0DE4F007C121F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E3226591FE0DE4F007C121F;
+			remoteInfo = CircleCI2Example;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EDEA1541EEC81D821E01EDC /* Pods-CircleCI2ExampleTests.inhouse_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2ExampleTests.inhouse_staging.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests.inhouse_staging.xcconfig"; sourceTree = "<group>"; };
+		2114B52F82F99DB89C64A2C2 /* Pods-CircleCI2ExampleTests.adhoc_development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2ExampleTests.adhoc_development.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests.adhoc_development.xcconfig"; sourceTree = "<group>"; };
+		2E32265A1FE0DE4F007C121F /* CircleCI2Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleCI2Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E32265D1FE0DE4F007C121F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E32265F1FE0DE4F007C121F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E3226621FE0DE4F007C121F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E3226641FE0DE4F007C121F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E3226671FE0DE4F007C121F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E3226691FE0DE4F007C121F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E32266E1FE0DE4F007C121F /* CircleCI2ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleCI2ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3226721FE0DE4F007C121F /* CircleCI2ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCI2ExampleTests.swift; sourceTree = "<group>"; };
+		2E3226741FE0DE4F007C121F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A606F385BE06EA21CC238A2 /* Pods-CircleCI2ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE0982986CB0B0797B5E9D2 /* Pods_CircleCI2ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCI2ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5073F78EF88C811CDB2AF7E2 /* Pods-CircleCI2ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		585BDA2D942D2D6DFAAD30A6 /* Pods_CircleCI2Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCI2Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6697524AD99902A17E926EA1 /* Pods-CircleCI2Example.adhoc_development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2Example.adhoc_development.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example.adhoc_development.xcconfig"; sourceTree = "<group>"; };
+		685B76455365FDC6D6915F58 /* Pods-CircleCI2Example.adhoc_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2Example.adhoc_staging.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example.adhoc_staging.xcconfig"; sourceTree = "<group>"; };
+		8252C92AA52C39F20A706367 /* Pods-CircleCI2Example.inhouse_development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2Example.inhouse_development.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example.inhouse_development.xcconfig"; sourceTree = "<group>"; };
+		98E0CE7C49855B9E16C0677C /* Pods-CircleCI2Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example.release.xcconfig"; sourceTree = "<group>"; };
+		C0CDF376DC816F2D096BCD29 /* Pods-CircleCI2ExampleTests.inhouse_development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2ExampleTests.inhouse_development.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests.inhouse_development.xcconfig"; sourceTree = "<group>"; };
+		C967A98CAF0AD250FA81ADFC /* Pods-CircleCI2Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D9430F24E16023B7E00CCC3A /* Pods-CircleCI2ExampleTests.adhoc_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2ExampleTests.adhoc_staging.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests.adhoc_staging.xcconfig"; sourceTree = "<group>"; };
+		FAD272ACE152B25E8C688403 /* Pods-CircleCI2Example.inhouse_staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCI2Example.inhouse_staging.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example.inhouse_staging.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E3226571FE0DE4F007C121F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D77E4F547A8CAFEEE8B0237 /* Pods_CircleCI2Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E32266B1FE0DE4F007C121F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A07BFF6DB219B715B3BF0F /* Pods_CircleCI2ExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E3226511FE0DE4F007C121F = {
+			isa = PBXGroup;
+			children = (
+				2E32265C1FE0DE4F007C121F /* CircleCI2Example */,
+				2E3226711FE0DE4F007C121F /* CircleCI2ExampleTests */,
+				2E32265B1FE0DE4F007C121F /* Products */,
+				4F878953FA640D2F4DDB9340 /* Pods */,
+				312C105F21A806B569009CB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E32265B1FE0DE4F007C121F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E32265A1FE0DE4F007C121F /* CircleCI2Example.app */,
+				2E32266E1FE0DE4F007C121F /* CircleCI2ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E32265C1FE0DE4F007C121F /* CircleCI2Example */ = {
+			isa = PBXGroup;
+			children = (
+				2E32265D1FE0DE4F007C121F /* AppDelegate.swift */,
+				2E32265F1FE0DE4F007C121F /* ViewController.swift */,
+				2E3226611FE0DE4F007C121F /* Main.storyboard */,
+				2E3226641FE0DE4F007C121F /* Assets.xcassets */,
+				2E3226661FE0DE4F007C121F /* LaunchScreen.storyboard */,
+				2E3226691FE0DE4F007C121F /* Info.plist */,
+			);
+			path = CircleCI2Example;
+			sourceTree = "<group>";
+		};
+		2E3226711FE0DE4F007C121F /* CircleCI2ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E3226721FE0DE4F007C121F /* CircleCI2ExampleTests.swift */,
+				2E3226741FE0DE4F007C121F /* Info.plist */,
+			);
+			path = CircleCI2ExampleTests;
+			sourceTree = "<group>";
+		};
+		312C105F21A806B569009CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				585BDA2D942D2D6DFAAD30A6 /* Pods_CircleCI2Example.framework */,
+				4FE0982986CB0B0797B5E9D2 /* Pods_CircleCI2ExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F878953FA640D2F4DDB9340 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C967A98CAF0AD250FA81ADFC /* Pods-CircleCI2Example.debug.xcconfig */,
+				FAD272ACE152B25E8C688403 /* Pods-CircleCI2Example.inhouse_staging.xcconfig */,
+				8252C92AA52C39F20A706367 /* Pods-CircleCI2Example.inhouse_development.xcconfig */,
+				98E0CE7C49855B9E16C0677C /* Pods-CircleCI2Example.release.xcconfig */,
+				3A606F385BE06EA21CC238A2 /* Pods-CircleCI2ExampleTests.debug.xcconfig */,
+				1EDEA1541EEC81D821E01EDC /* Pods-CircleCI2ExampleTests.inhouse_staging.xcconfig */,
+				C0CDF376DC816F2D096BCD29 /* Pods-CircleCI2ExampleTests.inhouse_development.xcconfig */,
+				5073F78EF88C811CDB2AF7E2 /* Pods-CircleCI2ExampleTests.release.xcconfig */,
+				685B76455365FDC6D6915F58 /* Pods-CircleCI2Example.adhoc_staging.xcconfig */,
+				6697524AD99902A17E926EA1 /* Pods-CircleCI2Example.adhoc_development.xcconfig */,
+				D9430F24E16023B7E00CCC3A /* Pods-CircleCI2ExampleTests.adhoc_staging.xcconfig */,
+				2114B52F82F99DB89C64A2C2 /* Pods-CircleCI2ExampleTests.adhoc_development.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E3226591FE0DE4F007C121F /* CircleCI2Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3226771FE0DE4F007C121F /* Build configuration list for PBXNativeTarget "CircleCI2Example" */;
+			buildPhases = (
+				8899BAFB25B908784F6598CE /* [CP] Check Pods Manifest.lock */,
+				2E3226561FE0DE4F007C121F /* Sources */,
+				2E3226571FE0DE4F007C121F /* Frameworks */,
+				2E3226581FE0DE4F007C121F /* Resources */,
+				FE536E3546CC191F843CF7AF /* [CP] Embed Pods Frameworks */,
+				8582FA1B766FB5CECEFABFDF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleCI2Example;
+			productName = CircleCI2Example;
+			productReference = 2E32265A1FE0DE4F007C121F /* CircleCI2Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E32266D1FE0DE4F007C121F /* CircleCI2ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E32267A1FE0DE4F007C121F /* Build configuration list for PBXNativeTarget "CircleCI2ExampleTests" */;
+			buildPhases = (
+				B0CCC77C19BA0A652A66AA51 /* [CP] Check Pods Manifest.lock */,
+				2E32266A1FE0DE4F007C121F /* Sources */,
+				2E32266B1FE0DE4F007C121F /* Frameworks */,
+				2E32266C1FE0DE4F007C121F /* Resources */,
+				D59A01D23FD76D2387F5D6DA /* [CP] Embed Pods Frameworks */,
+				2D32B8CA7C5FA85F6564F4CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E3226701FE0DE4F007C121F /* PBXTargetDependency */,
+			);
+			name = CircleCI2ExampleTests;
+			productName = CircleCI2ExampleTests;
+			productReference = 2E32266E1FE0DE4F007C121F /* CircleCI2ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E3226521FE0DE4F007C121F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tomoyuki Hosaka";
+				TargetAttributes = {
+					2E3226591FE0DE4F007C121F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					2E32266D1FE0DE4F007C121F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E3226591FE0DE4F007C121F;
+					};
+				};
+			};
+			buildConfigurationList = 2E3226551FE0DE4F007C121F /* Build configuration list for PBXProject "CircleCI2Example" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E3226511FE0DE4F007C121F;
+			productRefGroup = 2E32265B1FE0DE4F007C121F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E3226591FE0DE4F007C121F /* CircleCI2Example */,
+				2E32266D1FE0DE4F007C121F /* CircleCI2ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E3226581FE0DE4F007C121F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3226681FE0DE4F007C121F /* LaunchScreen.storyboard in Resources */,
+				2E3226651FE0DE4F007C121F /* Assets.xcassets in Resources */,
+				2E3226631FE0DE4F007C121F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E32266C1FE0DE4F007C121F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D32B8CA7C5FA85F6564F4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8582FA1B766FB5CECEFABFDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8899BAFB25B908784F6598CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CircleCI2Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0CCC77C19BA0A652A66AA51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CircleCI2ExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59A01D23FD76D2387F5D6DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCI2ExampleTests/Pods-CircleCI2ExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE536E3546CC191F843CF7AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCI2Example/Pods-CircleCI2Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E3226561FE0DE4F007C121F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3226601FE0DE4F007C121F /* ViewController.swift in Sources */,
+				2E32265E1FE0DE4F007C121F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E32266A1FE0DE4F007C121F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E3226731FE0DE4F007C121F /* CircleCI2ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E3226701FE0DE4F007C121F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E3226591FE0DE4F007C121F /* CircleCI2Example */;
+			targetProxy = 2E32266F1FE0DE4F007C121F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E3226611FE0DE4F007C121F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E3226621FE0DE4F007C121F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E3226661FE0DE4F007C121F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E3226671FE0DE4F007C121F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E3226751FE0DE4F007C121F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E3226761FE0DE4F007C121F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E3226781FE0DE4F007C121F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C967A98CAF0AD250FA81ADFC /* Pods-CircleCI2Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3D7QYCFBU4;
+				INFOPLIST_FILE = CircleCI2Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondol.rmp.CircleCI2Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E3226791FE0DE4F007C121F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E0CE7C49855B9E16C0677C /* Pods-CircleCI2Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3D7QYCFBU4;
+				INFOPLIST_FILE = CircleCI2Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondol.rmp.CircleCI2Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E32267B1FE0DE4F007C121F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A606F385BE06EA21CC238A2 /* Pods-CircleCI2ExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q882M7MSC;
+				INFOPLIST_FILE = CircleCI2ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondol.CircleCI2ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI2Example.app/CircleCI2Example";
+			};
+			name = Debug;
+		};
+		2E32267C1FE0DE4F007C121F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5073F78EF88C811CDB2AF7E2 /* Pods-CircleCI2ExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q882M7MSC;
+				INFOPLIST_FILE = CircleCI2ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondol.CircleCI2ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI2Example.app/CircleCI2Example";
+			};
+			name = Release;
+		};
+		2E32267D1FE0DE7A007C121F /* AdHoc_Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = AdHoc_Staging;
+		};
+		2E32267E1FE0DE7A007C121F /* AdHoc_Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 685B76455365FDC6D6915F58 /* Pods-CircleCI2Example.adhoc_staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3D7QYCFBU4;
+				INFOPLIST_FILE = CircleCI2Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tondol.rmp.CircleCI2Example-staging";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "abc6d1c7-696d-45a8-a72f-41846a9ac4cf";
+				PROVISIONING_PROFILE_SPECIFIER = "CircleCI2Example Staging (Ad-Hoc)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc_Staging;
+		};
+		2E32267F1FE0DE7A007C121F /* AdHoc_Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9430F24E16023B7E00CCC3A /* Pods-CircleCI2ExampleTests.adhoc_staging.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q882M7MSC;
+				INFOPLIST_FILE = CircleCI2ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondol.CircleCI2ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI2Example.app/CircleCI2Example";
+			};
+			name = AdHoc_Staging;
+		};
+		2E3226801FE0DE84007C121F /* AdHoc_Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = AdHoc_Development;
+		};
+		2E3226811FE0DE84007C121F /* AdHoc_Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6697524AD99902A17E926EA1 /* Pods-CircleCI2Example.adhoc_development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3D7QYCFBU4;
+				INFOPLIST_FILE = CircleCI2Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tondol.rmp.CircleCI2Example-development";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cba4dcd7-0f87-47e0-b88b-aa7fc93d8674";
+				PROVISIONING_PROFILE_SPECIFIER = "CircleCI2Example Development (Ad-Hoc)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = AdHoc_Development;
+		};
+		2E3226821FE0DE84007C121F /* AdHoc_Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2114B52F82F99DB89C64A2C2 /* Pods-CircleCI2ExampleTests.adhoc_development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Q882M7MSC;
+				INFOPLIST_FILE = CircleCI2ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tondol.CircleCI2ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI2Example.app/CircleCI2Example";
+			};
+			name = AdHoc_Development;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E3226551FE0DE4F007C121F /* Build configuration list for PBXProject "CircleCI2Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3226751FE0DE4F007C121F /* Debug */,
+				2E32267D1FE0DE7A007C121F /* AdHoc_Staging */,
+				2E3226801FE0DE84007C121F /* AdHoc_Development */,
+				2E3226761FE0DE4F007C121F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E3226771FE0DE4F007C121F /* Build configuration list for PBXNativeTarget "CircleCI2Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3226781FE0DE4F007C121F /* Debug */,
+				2E32267E1FE0DE7A007C121F /* AdHoc_Staging */,
+				2E3226811FE0DE84007C121F /* AdHoc_Development */,
+				2E3226791FE0DE4F007C121F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E32267A1FE0DE4F007C121F /* Build configuration list for PBXNativeTarget "CircleCI2ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E32267B1FE0DE4F007C121F /* Debug */,
+				2E32267F1FE0DE7A007C121F /* AdHoc_Staging */,
+				2E3226821FE0DE84007C121F /* AdHoc_Development */,
+				2E32267C1FE0DE4F007C121F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E3226521FE0DE4F007C121F /* Project object */;
+}

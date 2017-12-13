@@ -1,0 +1,40 @@
+default_platform :ios
+
+platform :ios do
+  before_all do
+    setup_circle_ci
+  end
+
+  desc "Build and run tests"
+  lane :test do
+    scan(
+      scheme: "CircleCI2Example",
+      configuration: "Debug")
+  end
+
+  desc "AdHoc build"
+  lane :adhoc do |options|
+    match(type: "adhoc")
+    gym(
+      scheme: "CircleCI2Example",
+      configuration: options[:configuration] || "AdHoc_Development",
+      export_method: "ad-hoc",
+      output_directory: "builds",
+      output_name: "adhoc")
+
+    notification(subtitle: "ビルド成功", message: "Ready to upload to deplaygate...")
+    upload_to_deploygate(options)
+  end
+
+  desc "Upload to DeployGate"
+  lane :upload_to_deploygate do |options|
+    message = options[:message] || `git rev-parse HEAD`
+    deploygate(
+      user: ENV["DEPLOYGATE_USER"],
+      api_token: ENV["DEPLOYGATE_API_TOKEN"],
+      ipa: "./builds/adhoc.ipa",
+      message: message
+    )
+    notification(subtitle: "アップロード成功", message: "upload to deplaygate has been completed!")
+  end
+end
